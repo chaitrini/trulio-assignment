@@ -1,0 +1,103 @@
+.grid-container {
+  color: #3b4144;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-cell {
+  /* width: 100%;
+  max-width: 33%; */
+  max-width: 20%;
+}
+
+.box-container {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.box {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.image-container {
+  max-width: 120px;
+  margin: auto;
+}
+
+.image {
+  width: 100%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.description {
+  margin-bottom: 16px;
+}
+
+.button-container {
+  text-align: center;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  width: 175px;
+  padding: 10px;
+  background-color: #007882;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: white;
+  color: #007882;
+ 
+  border: 1px solid #007882;
+  border-radius: 4px;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+  .grid-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-cell {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600) {
+  .grid-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-cell {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .grid-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-cell {
+    max-width: 90%;
+  }
+}
